@@ -13,11 +13,13 @@ const Drawer = createDrawerNavigator();
 
 import Login from './pages/Login';
 import Home from './pages/Home';
+import Eventos from './pages/Eventos';
 
 
 const Autenticado = () => {
   return (
     <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Screen name="Eventos" component={Eventos} />
       <Drawer.Screen name="Home" component={Home} />
     </Drawer.Navigator>
   );
